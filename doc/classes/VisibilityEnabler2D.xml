@@ -15,6 +15,7 @@
 			<argument index="0" name="enabler" type="int" enum="VisibilityEnabler2D.Enabler">
 			</argument>
 			<description>
+				Returns [code]true[/code] if the given enabler category is enabled.
 			</description>
 		</method>
 		<method name="set_enabler">
@@ -25,6 +26,7 @@
 			<argument index="1" name="enabled" type="bool">
 			</argument>
 			<description>
+				Sets the given enabler.
 			</description>
 		</method>
 	</methods>
@@ -59,12 +61,13 @@
 			This enabler will stop [Particles2D] nodes.
 		</constant>
 		<constant name="ENABLER_PARENT_PROCESS" value="3" enum="Enabler">
-			This enabler will stop the parent's _process function.
+			This enabler will stop the parent's [code]_process[/code] function.
 		</constant>
 		<constant name="ENABLER_PARENT_PHYSICS_PROCESS" value="4" enum="Enabler">
-			This enabler will stop the parent's _physics_process function.
+			This enabler will stop the parent's [code]_physics_process[/code] function.
 		</constant>
 		<constant name="ENABLER_PAUSE_ANIMATED_SPRITES" value="5" enum="Enabler">
+			This enabler will stop [AnimatedSprite] nodes.
 		</constant>
 		<constant name="ENABLER_MAX" value="6" enum="Enabler">
 			Represents the size of the [enum Enabler] enum.
